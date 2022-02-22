@@ -1,0 +1,1030 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	transition: .1s ease;
+}
+
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(white, #f7c8ca);
+	-ms-overflow-style: none;  /* Hides scrollbar for IE and Edge */
+  	scrollbar-width: none;  /* Hides scrollbar for Firefox */
+}
+
+/* Hides scrollbar for Chrome, Safari and Opera*/
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
+/* Header Section Start .............................................. */
+header
+{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	/*background-color: rgba(160, 183, 210, 0.1);*/
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0px 20px 20px rgba(255, 255, 255, 0.9);
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+header .logo
+{
+	font-weight: bolder;
+	font-size: 1.5em;
+	color: #4c5454;
+	padding: 0 1.5rem;
+}
+header .logo:hover
+{
+	color: black;
+	cursor: pointer;
+}
+
+header .logo span 
+{
+	color: rgb(254, 109, 115);
+}
+
+
+header .icons a
+{
+	font-size: 1.5rem;
+	font-weight: bolder;
+	color: #000;
+	padding: 0 1.1rem;
+}
+
+header .icons a:hover
+{
+	color: rgb(254, 109, 115);
+	cursor: pointer;
+}
+
+header #toggler
+{
+	display: none;
+}
+
+header .fa-bars
+{
+	font-size: 1.5rem;
+	padding: .5rem;
+	display: none;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+header .fa-bars:hover
+{
+	color: gray;
+}
+
+.navmain a
+{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding: 0;
+
+}
+
+
+.navbuttons
+{
+	padding: 1.3em 3em;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-weight: 500;
+	color: #fff;
+	background-color: rgb(254, 109, 115, 1);
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+}
+
+.current .navbuttons
+{
+	/*background-color: #CE6A85;*/
+	background-color: #DA344D;
+	box-shadow: 0px 8px 15px rgba(218, 52, 77, 0.4);
+
+}
+
+.navmain current
+{
+	background-color: rgb(51, 222, 24, 0.9);
+} 
+
+.navbuttons:hover 
+{
+	background-color: #fff;
+	box-shadow: 0px 15px 20px rgba(254, 109, 115, 0.4);
+	color: #000;
+	transform: translateY(2px);
+}
+
+.navbuttons:active 
+{
+	transform: translateY(-1px);
+}
+/* Header Section End .............................................. */
+
+
+/*Cover Section.............................................. */
+.cover
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("../images/cover/coverbg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 50px;
+	margin: 50px;
+	border-radius: 10px;
+	box-shadow: 0 30px 25px rgba(254, 109, 115, 0.4);
+
+}
+
+.cover-text
+{
+	text-align: center;
+	flex: 50%;
+	font-size: 20px;
+	color: black;
+}
+
+.cover-text h1
+{
+	opacity: 0;
+	cursor: default;
+	animation: text_reveal 1.5s ease;
+	animation-fill-mode: both;
+}
+
+.cover-text small
+{
+	opacity: 0;
+	cursor: default;
+	animation: text_reveal 1.5s ease;
+	animation-fill-mode: both;
+}
+
+
+.cover-image
+{
+	flex: 50%;
+
+}
+.cover-image img
+{
+	
+	width: 80%;
+	height: auto;
+	display: block;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0px 15px 20px rgba(254, 109, 115, 0.5);
+}
+
+/* Cover Section End............................................. */
+
+
+/* About Us Section Start........................................ */
+
+.about-us
+{
+	color: black;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 2rem;
+	background: linear-gradient(#FDF0F1, #D2D2CD);
+	box-shadow: 0px 15px 20px rgba(254, 109, 115, 0.5);
+}
+
+.about-us h1
+{
+	
+	opacity: 0;
+	animation: text_reveal 1.5s ease;
+	animation-fill-mode: forwards;
+	display: inline-block;
+	text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+	text-underline-offset: 0.4em;
+	transition: text-decoration-color 1s ease;
+}
+
+.about-us h1:hover
+{
+	cursor: default;
+	text-decoration-color:rgba(0, 0, 0, 1);
+	text-underline-offset: 0.4em;
+}
+
+.about-cards .container
+{
+	padding:  2.5rem 0;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.about-cards .container .text-box
+{
+	flex: 25%;
+}
+
+.about-cards .container .slidebox
+{
+	flex: 50%;
+	position: relative;
+}
+
+.about-cards .container .slidebox .slide 
+{
+	display: none;
+}
+
+.about-cards img
+{
+	width: 80%;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0px 15px 20px rgba(254, 109, 115, 0.5);
+}
+
+.about-cards .container .slidebox button
+{
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1.1rem;
+  margin-top: -2rem;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.about-cards .container .slidebox button:hover
+{
+	color: crimson;
+}
+
+.about-cards .container .slidebox .prev-slide
+{
+	left: 10%;
+}
+
+.about-cards .container .slidebox .next-slide
+{
+	right: 10%;
+}
+
+.about-cards .container .text-box
+{
+	margin: auto;
+	padding: 2rem;
+}
+
+
+/* About Us Section End.......................................... */
+
+/* Explore Products Section Start */
+
+
+.products 
+{
+	text-align: center;
+	padding: 20px;
+	/*background-image: url("../images/backgrounds/exploreproductbg.jpg");*/
+	background: linear-gradient(#D5D4CF, #F8CECF);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 1.2rem;
+	color: black;
+	box-shadow: 0px 15px 20px rgba(254, 109, 115, 0.5);
+}
+
+.products h1
+{
+	text-transform: uppercase;
+	display: inline-block;
+	text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+	text-underline-offset: 0.4em;
+	transition: text-decoration-color 1s ease;
+
+}
+
+.products h1:hover
+{
+	cursor: default;
+	text-decoration-color:rgba(0, 0, 0, 1);
+	text-underline-offset: 0.4em;
+}
+
+
+.product-tiles
+{
+	padding: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.product-tiles .box
+{
+	flex: 1 30rem;
+	box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+	border-radius: 1rem;
+	position: relative;
+	background-color: white;
+
+}
+
+.product-tiles .box .dprice
+{
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	padding: .7rem 1rem;
+	font-size: 1.5rem;
+	color: rgb(254, 109, 115);
+	background: rgba(255, 255, 255, 0.3);
+	z-index: 1;
+	border-radius: .5rem;
+}
+
+.product-tiles .box .boximage
+{
+	position: relative;
+	text-align: center;
+	padding: 0;
+	overflow: hidden;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+
+.product-tiles .box .boximage img
+{
+	width: 100%;
+	height: 22rem;
+}
+.product-tiles .box:hover .boximage img
+{
+	transform: scale(1.1);
+}
+.product-tiles .box .boximage .mediaicons
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+}
+
+.product-tiles .box .boximage .mediaicons a
+{
+	height: 5rem;
+	line-height: 5rem;
+	font-size: 2rem;
+	width: 50%;
+	background: rgb(254, 109, 115, 0.5);
+	color: white;
+}
+
+.product-tiles .box .boximage .mediaicons .fa-cart-plus
+{
+	border-left: .1rem solid #fff7;
+	border-right: .1rem solid #fff7;
+	width: 100%;
+
+}
+
+.product-tiles .box .boximage .mediaicons a:hover
+{
+	background-color: white;
+	color: black;
+}
+
+.product-tiles .box .content
+{
+	padding: 1.1rem;
+	text-align: center;
+}
+
+.product-tiles .box .content h3
+{
+	color: #333;
+}
+
+.product-tiles .box .content .price
+{
+	color: rgb(254, 109, 115);
+	padding-top: 1rem;
+	font-weight: bold;
+}
+
+.product-tiles .box .content .price span
+{
+	color: #999;
+	text-decoration: line-through;	
+	font-weight: lighter;
+	font-size: .9rem;
+}
+/* Explore Products Section End */
+
+
+/* Customer Reviews Section Start */
+.customer-reviews
+{
+	text-align: center;
+	padding: 1.5rem;
+	background: linear-gradient(#F7CECF, white);
+
+}
+.customer-reviews h1
+{
+	display: inline-block;
+	color: black;
+	text-transform: uppercase;
+	text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+	text-underline-offset: 0.4em;
+	transition: text-decoration-color 1s ease;
+}
+.customer-reviews h1:hover
+{
+	cursor: default;
+	text-decoration-color:rgba(0, 0, 0, 1);
+	text-underline-offset: 0.4em;
+}
+
+.customer-reviews .review-box
+{
+	margin-top: 1rem;
+	display: flex;
+	flex-basis: 20%	;
+	border-top: .1rem solid crimson;
+	border-bottom: .1rem solid crimson;
+}	
+
+.customer-reviews .review-box .box 
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+}
+
+
+.customer-reviews .review-box .box .person
+{
+	flex: 50%;
+}
+
+.customer-reviews .review-box .box .person img
+{
+	width: 40%;
+	height: auto;
+}
+
+.customer-reviews .review-box .box .rating
+{
+	flex: 50%;
+	align-items: flex-end;
+
+}
+/* Customer Reviews Section End */
+
+
+/* Footer Section Start.......................................... */
+.footer-constant
+{
+	background: linear-gradient(white, #FDC0C2);
+}
+.footer-constant .footer-icons
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	font-size: 2rem;
+	padding: 1rem;
+	
+}
+
+.footer-constant .footer-icons a
+{
+	color: black;
+	margin: 0;
+	padding: 0;
+	transition: .5s ease;
+}
+
+.footer-constant .footer-icons a:hover
+{
+	color: crimson;
+	font-size: 3rem;
+}
+
+.footer-text
+{
+	text-align: center;
+	display: flex;
+}
+
+.footer-text .box
+{
+	flex-basis: 50%;
+	padding: 1rem;
+}
+
+.footer-text .box h3
+{
+	padding: .5rem;
+	display: inline-block;
+	text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+	text-underline-offset: 0.4em;
+	transition: text-decoration-color 1s ease;
+}
+
+.footer-text .box a
+{
+	color: gray;
+}
+
+.footer-text .box a:hover
+{
+	color: black;
+
+}
+
+.footer-text .box h3:hover
+{
+	cursor: default;
+	text-decoration-color:rgba(0, 0, 0, 1);
+	text-underline-offset: 0.4em;
+}
+
+.footer-text .box button
+{
+	padding: 1.3em 3em;
+	font-size: .6rem;
+	letter-spacing: 1.5px;
+	font-weight: 500;
+	color: #fff;
+	background-color: rgb(254, 109, 115, 0.9);
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+}
+.footer-text .box button:hover
+{
+	background-color: #fff;
+	box-shadow: 0px 15px 20px rgba(254, 109, 115, 0.4);
+	color: #000;
+}
+
+.footer-text .box input
+{
+	width: auto;
+	height: 30%;
+	padding: .2rem;
+	margin-right: 1rem;
+}	
+
+
+.footer-constant .copyright
+{
+	text-align: center;
+	color: black;
+	padding: 1rem;
+}
+
+/* Footer Section End ........................................ */
+ 
+
+/* Blog Page Start*/
+
+/* Blog Main Section Start */
+.blog-main
+{
+	background-image: url("../images/blog/bg2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.blog-main .blog h1
+{
+	display: inline-block;
+	color: #f88379;
+	padding: 2rem;
+	text-decoration: underline 0.1em rgba(230, 203, 204, 0);
+	text-underline-offset: 0.4em;
+	transition: text-decoration-color 1s ease;
+}
+.blog-main .blog h1:hover
+{
+	cursor: default;
+	text-decoration-color:rgba(248, 131, 121, 1);
+	text-underline-offset: 0.4em;
+}
+	
+
+.blog-main .blog p
+{
+	padding: 2rem;
+	letter-spacing: .1rem;
+	line-height: 2rem;
+}
+.blog-main .blog
+{
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 2rem;
+	color: whitesmoke;
+	text-align: center;
+	padding: 5rem;
+	width: 80%;
+}
+
+
+/* Blog Main Section End */
+
+/* Blog Page End*/
+
+
+/* Research Page Start */
+
+/* Research Page End */
+
+
+/* Contact Page Start */
+.contact-container
+{
+	padding: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.contact-tiles
+{
+	margin: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.address
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-right: .1px solid black;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+}
+
+.address .text 
+{
+	text-align: justify;
+	padding: 1rem;
+	text-transform: none;
+}
+
+.address .icon a
+{	
+	font-size: 2rem;
+	color: crimson;
+	padding: 1rem;
+}
+
+.email
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-right: .1px solid black;
+}
+
+.email .text 
+{
+	text-align: justify;
+	padding: 1rem;
+	text-transform: none;
+}
+
+.email .icon a
+{	
+	font-size: 2rem;
+	color: crimson;
+	padding: 1rem;
+}
+
+.phone
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+
+.phone .text 
+{
+	text-align: justify;
+	padding: 1rem;
+	text-transform: none;
+}
+
+.phone .icon a
+{	
+	font-size: 2rem;
+	color: crimson;
+	padding: 1rem;
+}
+
+.form-container form 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 1rem;
+	letter-spacing: .2rem;
+}
+
+.form-container .form-col-1
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	margin: 2rem;
+}
+
+.form-container .form-col-1 input
+{
+	width: 100%;
+	padding: .3rem;
+	outline: none;
+	color: #999;
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+.form-container .form-col-2
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	margin: 2rem;
+}
+
+.form-container .form-col-2 textarea
+{
+	width: 20rem;
+	padding: .3rem;
+	height: 10rem;
+	margin: 1rem 0;
+}
+
+.form-container .form-col-2 input
+{
+	width: 85%;
+	padding: .3rem;
+	margin-top: 1rem;
+	height: 2rem;
+	cursor: pointer;
+	background-color: rgb(254, 109, 115, 1);
+	transition: .5s ease background-color;
+}
+
+.form-container .form-col-2 input:hover
+{
+	background-color: white;
+}
+
+/* Contact Page End */
+
+
+/* Discover More Page Start */
+
+.discover-main .category
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5rem;
+	background: linear-gradient(white, #ffe4e1);
+}
+
+.discover-main .category a
+{
+	text-transform: uppercase;
+	color: black;
+	padding: 1.5rem;
+	letter-spacing: .2rem;
+	font-weight: 500;
+	transition: .5s linear;
+}
+
+.discover-main .category a:hover
+{
+	background-color: white;
+}
+
+.slide-main .slide-box
+{
+	display: block;
+}
+
+.slide-main .slide-images
+{
+	overflow: auto;
+	white-space: nowrap;
+	margin: 2rem;
+	border-top-right-radius: 1rem;
+}
+
+.slide-main .slide-box h1
+{
+	text-align: center;
+	padding: 1rem;
+	text-transform: uppercase;
+}
+
+
+/* Discover More Page End */
+
+
+/* Research Page Start */
+
+.research-container
+{
+	margin: 1rem 0;
+	text-align: center;
+	padding: 2rem;
+}
+
+.research-container .box
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	text-align: justify;
+}
+
+.research-container .box .text-box
+{
+	flex: 50%;
+	padding: 2rem;
+	margin-left: 3rem;
+}
+
+.research-container .box .image-box
+{
+	flex: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.research-container .box .image-box img
+{
+	width: 80%;
+	border-radius: 1.5rem;
+}
+.research-container .box .image-box img:hover
+{
+	transform: scale(1.1);
+}
+
+.research-container .box .right
+{
+	margin-left: 9.5rem;
+}
+
+
+/* Research Page End */
+
+
+/* Keyframes Start */
+
+@keyframes text_reveal
+{
+	50%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 100%;
+	}
+}
+/* Keyframes End */
+
+
+/* Media Queries */
+/* Changes for when screen size is under 999px */
+@media only screen and (max-width: 999px)
+{
+	html
+	{
+		font-size: 60%;
+	}
+
+	header
+	{
+		padding: 2rem;
+	}
+}
+
+/* Changes for when screen size is under 875px */
+@media only screen and (max-width: 875px)
+{
+	header .fa-bars
+	{
+		display: block;
+	} 
+
+	header .navmain
+	{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: rgba(255, 255, 255, 0.3);
+		border-top: .1rem solid  rgba(0, 0, 0, .1);
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+
+	header #toggler:checked ~ .fa-bars
+	{
+		color: rgb(254, 109, 115);	
+	}
+	
+	header #toggler:checked ~ .navmain
+	{
+
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	
+	}
+
+	header .navmain a
+	{
+		padding: 1.5rem;
+		background: rgba(255, 255, 255, 0.4);
+		display: block;
+		border-top: .1rem solid  rgba(0, 0, 0, .1);
+	}
+
+	.about-cards .container .text-box
+	{
+		flex-wrap: wrap;
+		overflow-y: scroll;
+	}
+}
+
+/* Media Queries End */
+
