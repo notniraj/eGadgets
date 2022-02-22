@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="Description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="E-Commerce Site For Electronic Gadgets " />
+	<meta name="keywords" content="HTML, CSS, JavaScript, E-Commerce, Electronic Products" />
+	<meta name="author" content="Niraj Karki Thapa" />
+	<title>Home</title>
+
+	<!-- Css Link -->
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+	<!-- Fonts Link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+	
+
+	<!-- Font Awesome 4 Icons Link -->
+	<script src="https://use.fontawesome.com/6412a21ba2.js"></script>
+
+
+	<!-- Alert Function For Add to Cart Functionality -->
+	<script>
+		function addToCart(){
+			alert("Added to cart!");
+		}
+	</script>
+</head>
+<body>
+
+	<!-- Header Section Starts -->
+	<header>
+		<!-- Navbar Section Start-->
+		<input type="checkbox" name="" id="toggler">
+		<label for="toggler" class="fa fa-bars"></label>
+		
+		<a href="#" class="logo">Techie<span>.</span></a>
+
+		<nav class="navmain">
+				
+			<a href="#" class="current">
+				<button class="navbuttons">Home</button>
+			</a>
+
+			<a href="./htmls/Blog.html">
+				<button class="navbuttons">Blog</button>
+			</a>
+
+			<a href="./htmls/Research.html">
+				<button class="navbuttons">Research</button>
+			</a>
+
+			<a href="./htmls/DiscoverMore.html">
+				<button class="navbuttons">Discover More</button>
+			</a>
+
+			<a href="./htmls/Contact.html">
+				<button class="navbuttons">Contact</button>
+			</a>
+		</nav>
+
+		<div class="icons">
+
+			<a href = "#">
+				<i class="fa fa-heart" title="Favorites" aria-hidden="true"></i>
+			</a>
+
+			<a href = "#products">
+				<i class="fa fa-shopping-cart" title="Cart" aria-hidden="true"></i>
+			</a>
+
+			<a href = "#">
+				<i class="fa fa-user" title="Account" aria-hidden="true"></i>
+			</a>
+		</div>
+		<!-- Navbar Section End -->
+
+	</header>
+	<!-- End of Header Section -->
+
+
+	<!-- Cover Section Start -->
+	<div class="cover">
+		<section class="cover-text">
+			<h1>
+				Check out our deals<br>
+			</h1>
+			<small>Go wild!!</small>
+			
+		</section>
+
+		<section class="cover-image">
+			<img src="./images/products/coverproduct.jpg">
+			
+		</section>
+		
+	</div>
+	<!-- Cover Section End -->
+
+
+
+	<!-- Main Section Start-->
+	<div class="main">
+
+		<!-- About Us Section Start -->
+		<section class="about-us">
+	
+			<h1>About Us</h1>
+
+			<div class="about-cards">
+				<div class="container">
+					<div class="text-box">
+						<h3>
+							<em>Check out our collaborations</em>
+						</h3>
+						<small>
+							<em>"We deliver the best."</em> is our motto.
+						</small>
+						<br>
+						<br>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+							Nisi omnis eaque molestias minus unde sint. 
+							Harum, quis mollitia voluptatum consequatur ipsum at 
+							dolorem delectus sequi esse explicabo eaque pariatur molestiae?
+						</p>
+					</div>
+					<div class="slidebox">
+						<img class="slide" src="./images/aboutus/aboutus3.jpg">
+						<img class="slide" src="./images/aboutus/aboutus2.jpg">
+						<img class="slide" src="./images/aboutus/aboutus1.jpg">
+						<img class="slide" src="./images/aboutus/aboutus4.jpg">
+						<img class="slide" src="./images/aboutus/aboutus5.jpg">
+
+
+						<button class="prev-slide" onclick="plusSlide(-1)">&#10094;</button>
+						<button class="next-slide" onclick="plusSlide(1)">&#10095;</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About Us Section End -->
+
+		<!-- Product Explore Section Start -->
+		<section class="products" id="products">
+			<h1>Explore Products</h1>
+
+			<div class="product-tiles">
+
+				<!-- Product Boxes -->
+				<div class="box">
+					<span class="dprice">-10% Off</span>
+					<div class="boximage">
+						<img src="./images/products/camera/camera1.jpg">
+						<div class="mediaicons">
+							<a href = "#" title="Add To Favorites">
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</a>
+
+							<a href = "#" title="Add To Cart" onclick="addToCart()">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</a>
+							<a href = "#" title="Share">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+							</a>				
+						</div>
+					</div>
+
+					<div class="content">
+						<h3>Camera</h3>
+						<div class="price">50k <span>65k</span></div>
+					</div>
+				</div>
+
+				<div class="box">
+					<span class="dprice">-10% Off</span>
+					<div class="boximage">
+						<img src="./images/products/polaroid.jpg">
+						<div class="mediaicons">
+							<a href = "#" title="Add To Favorites">
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</a>
+
+							<a href = "#" title="Add To Cart" onclick="addToCart()">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</a>
+							<a href = "#" title="Share">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+							</a>				
+						</div>
+					</div>
+
+					<div class="content">
+						<h3>Polaroid</h3>
+						<div class="price">25k <span>40k</span></div>
+					</div>
+				</div>
+
+				<div class="box">
+					<span class="dprice">-20% Off</span>
+					<div class="boximage">
+						<img src="./images/products/audio/audio1.jpg">
+						<div class="mediaicons">
+							<a href = "#" title="Add To Favorites">
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</a>
+
+							<a href = "#" title="Add To Cart" onclick="addToCart()">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</a>	
+							<a href = "#" title="Share">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+							</a>				
+						</div>
+					</div>
+
+					<div class="content">
+						<h3>Sony Headphones</h3>
+						<div class="price">30k <span>40k</span></div>
+					</div>
+				</div>
+
+				<div class="box">
+					<span class="dprice">-30% Off</span>
+					<div class="boximage">
+						<img src="./images/products/earpodsblack.jpg">
+						<div class="mediaicons">
+							<a href = "#" title="Add To Favorites">
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</a>
+ 
+							<a href = "#" title="Add To Cart" onclick="addToCart()">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</a>
+							<a href = "#" title="Share">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+							</a>				
+						</div>
+					</div>
+
+					<div class="content">
+						<h3>Earbuds</h3>
+						<div class="price">8k <span>15k</span></div>
+					</div>
+				</div>
+
+				<div class="box">
+					<span class="dprice">-50% Off</span>
+					<div class="boximage">
+						<img src="./images/products/accessories/accessories1.jpg">
+						<div class="mediaicons">
+							<a href = "#" title="Add To Favorites">
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</a>
+
+							<a href = "#" title="Add To Cart" onclick="addToCart()">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</a>
+							<a href = "#" title="Share">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+							</a>				
+						</div>
+					</div>
+
+					<div class="content">
+						<h3>Mouse</h3>
+						<div class="price">5k <span>10k</span></div>
+					</div>
+				</div>
+
+				<div class="box">
+					<span class="dprice">-10% Off</span>
+					<div class="boximage">
+						<img src="./images/products/controller.jpg">
+						<div class="mediaicons">
+							<a href = "#" title="Add To Favorites">
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</a>
+
+							<a href = "#" title="Add To Cart" onclick="addToCart()">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</a>
+							<a href = "#" title="Share">
+								<i class="fa fa-share-alt"aria-hidden="true"></i>
+							</a>				
+						</div>
+					</div>
+
+					<div class="content">
+						<h3>Contoller</h3>
+						<div class="price">8k <span>10k</span></div>
+					</div>
+				</div>
+
+				<div class="box">
+					<span class="dprice">-10% Off</span>
+					<div class="boximage">
+						<img src="./images/products/earpodswhite.jpg">
+						<div class="mediaicons">
+							<a href = "#" title="Add To Favorites">
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</a>
+
+							<a href = "#" title="Add To Cart" onclick="addToCart()">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</a>
+							<a href = "#" title="Share">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+							</a>				
+						</div>
+					</div>
+
+					<div class="content">
+						<h3>White Earpods</h3>
+						<div class="price">6k <span>10k</span></div>
+					</div>
+				</div>
+
+				<div class="box">
+					<span class="dprice">-20% Off</span>
+					<div class="boximage">
+						<img src="./images/products/smartphones/smartphone1.jpg">
+						<div class="mediaicons">
+							<a href = "#" title="Add To Favorites">
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</a>
+
+							<a href = "#" title="Add To Cart" onclick="addToCart()">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</a>
+							<a href = "#" title="Share">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+							</a>				
+						</div>
+					</div>
+
+					<div class="content">
+						<h3>Ipad</h3>
+						<div class="price">80k <span>100k</span></div>
+					</div>
+				</div>
+
+				<div class="box">
+					<span class="dprice">-30% Off</span>
+					<div class="boximage">
+						<img src="./images/products/Watch/watch1.jpg">
+						<div class="mediaicons">
+							<a href = "#" title="Add To Favorites">
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</a>
+
+							<a href = "#" title="Add To Cart" onclick="addToCart()">
+								<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							</a>
+							<a href = "#" title="Share">
+								<i class="fa fa-share-alt" aria-hidden="true"></i>
+							</a>				
+						</div>
+					</div>
+
+					<div class="content">
+						<h3>Watch</h3>
+						<div class="price">12k <span>16k</span></div>
+					</div>
+				</div>
+		
+			</div>
+		</section>
+		<!-- Product Explore Section End -->
+		
+
+		<!-- Customer Review Section Start -->
+		<section class="customer-reviews">
+			<h1> Customer Reviews</h1>
+
+			<div class="review-box">
+				<div class="box">
+					<div class="person">
+						<img src="./images/reviewpeople/person1.jpg">
+						
+					</div>
+					<div class="rating">
+						<h2>Rating</h2>
+							<span class="fa fa-star-half-o"></span>
+							<span class="fa fa-star-o"></span>
+							<span class="fa fa-star-o"></span>
+							<span class="fa fa-star-o"></span>
+							<span class="fa fa-star-o"></span>
+						<p>"The stuff i bought from here was amazing and were sold on quit the reasonable price. Best site ever." </p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="person">
+						<img src="./images/reviewpeople/person2.jpg">
+						
+					</div>
+					<div class="rating">
+						<h2>Rating</h2>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star-half-o"></span>
+						<p>"The stuff i bought from here was amazing and were sold on quit the reasonable price. Best site ever."</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="person">
+						<img src="./images/reviewpeople/person3.jpg">
+						
+					</div>
+					<div class="rating">
+						<h2>Rating</h2>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star-half-o"></span>
+							<span class="fa fa-star-o"></span>
+							<span class="fa fa-star-o"></span>
+						<p>"The stuff i bought from here was amazing and were sold on quit the reasonable price. Best site ever."</p>	
+					</div>
+				</div>
+				<div class="box">
+					<div class="person">
+						<img src="./images/reviewpeople/person4.jpg">
+						
+					</div>
+					<div class="rating">
+						<h2>Rating</h2>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star"></span>
+							<span class="fa fa-star-half-o"></span>
+							<span class="fa fa-star-o"></span>
+						<p>"The stuff i bought from here was amazing and were sold on quit the reasonable price. Best site ever."</p>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<!-- Customer Review Section End -->
+	</div>
+	<!-- Main Section End-->
+
+
+	<!-- Footer Section Start -->
+	<footer class="footer-constant">
+
+		<section class="footer-icons">
+			<a href="https://www.facebook.com/niraj.karkithapa.31/" class="fa fa-facebook-official" target="_blank"></a>
+			<a href="https://www.instagram.com/nirajkarkithapa/" class="fa fa-instagram" target="_blank"></a>
+			<a href="https://twitter.com/defnotnik" class="fa fa-twitter" target="_blank"></a>
+			<a href="#" class="fa fa-amazon"></a>
+		</section>
+
+		<section class="footer-text">
+			<div class="box">
+				<h3>Resources</h3><br>
+				<a href="./htmls/Contact.html">Contact</a><br>
+				<a href="#">Privacy</a><br>
+				<a href="#">Support</a><br>
+			</div>
+			<div class="box">
+				<h3>Company</h3><br>
+				<a href="#">About</a><br>
+				<a href="#">Location</a><br>
+			</div>
+
+			<div class="box">
+				<h3>Sign-up</h3><br>
+				<input type="text" name="" placeholder="example@gmail.com">
+				<button type="submit" class="fa fa-user-plus">Sign-up</button>
+			</div>
+			
+		</section>
+
+		<section class="copyright">
+			<p>Made By Niraj Karki Thapa, Jhamsikhel, Kathmandu</p>
+			<p>Copyright &copy; 2021 Techie. All Rights Reserved.</p>
+			
+		</section>
+	</footer>
+	<!-- Footer Section End -->
+
+
+
+<script type="text/javascript" src="./js/jscode.js">
+
+</script>
+</body>
+</html>
