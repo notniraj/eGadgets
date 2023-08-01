@@ -1,2 +1,2 @@
 # eGadgets
-Site for showcasing electronic gadgets
+Static site template for showcasing electronic gadgets
